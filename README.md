@@ -55,6 +55,44 @@ We combine them so the generator learns to fool the discriminator while the disc
 ## 🛠️ Installation & Usage
 1. **Clone this repository**
    ```bash
+   
+---
+
+## 🧠 How It Works
+**1. The Generator** 🖌️  
+Takes random noise → outputs a 28×28 pixel image.  
+Uses:
+- Dense layers
+- LeakyReLU activations
+- BatchNormalization
+- `tanh` output to normalize pixel range
+
+**2. The Discriminator** 🔍  
+Classifies an image as **real** (from dataset) or **fake** (from generator).  
+Uses:
+- Flatten layer
+- Dense + LeakyReLU
+- Sigmoid output for probability
+
+**3. The GAN** ⚔️  
+We combine them so the generator learns to fool the discriminator while the discriminator gets better at spotting fakes.
+
+---
+
+## 📸 Training Evolution
+| Epoch 0 | Epoch 1000 | Epoch 5000 |
+|---------|------------|------------|
+| ![](images/gan_images_0.png) | ![](images/gan_images_1000.png) | ![](images/gan_images_5000.png) |
+
+> _From pure noise to recognizable digits!_
+
+---
+
+## 🛠️ Installation & Usage
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/Afsheen2307/generative-ai-gan.git
+   cd generative-ai-gan
 
 2. Install dependencies
 
