@@ -52,12 +52,6 @@ We combine them so the generator learns to fool the discriminator while the disc
 
 ---
 
-## 🛠️ Installation & Usage
-1. **Clone this repository**
-   ```bash
-   
----
-
 ## 🧠 How It Works
 **1. The Generator** 🖌️  
 Takes random noise → outputs a 28×28 pixel image.  
